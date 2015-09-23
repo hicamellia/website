@@ -1,0 +1,66 @@
+@charset "utf-8";
+body{font-family:"微软雅黑"; font-size:14px; color:black; background:white; position:relative; overflow:hidden;}
+body, div, dl, dt, dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,input,em{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:none;}
+address,caption, cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul,li{list-style-type:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before, q:after{content:''}
+input,textarea{outline:none;resize:none;font-family:"微软雅黑";font-size:14px;border:none;-webkit-appearance:none;}
+input::-ms-clear{display:none;}
+a{cursor:pointer;}
+a:link,a:visited,a:hover,a:active {text-decoration:none;}
+img{width:100%; height:auto;}
+.clear{clear:both; width:0; height:0; margin:0; padding:0;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.center{position:absolute; left:0; right:0; top:0; bottom:0; margin:auto;}
+.hide{display:none;}
+.hidden{visibility:hidden;}
+.ellipsis{white-space:nowrap !important; white-space:normal; overflow:hidden; text-overflow:ellipsis;}
+.full{width:100%; height:100%;}
+.shade{position:absolute; width:100%; height:100%; top:0; left:0; background:black; opacity:0.7;}
+.mist{position:absolute; width:100%; height:100%; top:0; left:0; background:white; opacity:0.7;}
+.yscroll{overflow-x:hidden; overflow-y:scroll; -webkit-overflow-scrolling:touch;}
+img{user-select:none;}
+.trans02{transition: all .2s ease;}
+.trans05{transition: all .5s ease;}
+.trans1{transition: all 1s ease;}
+
+.rd-head{width:100%; height:165px; background:white; position:relative;}
+.rd-head div{position:absolute; top:40px; left:40px; width:209px; height:71px; background:url(../img/logo.png);}
+.rd-head a{position:absolute; top:60px; right:70px; width:150px; height:45px; line-height:45px; font-size:24px; border-bottom:1px solid black; background:url(../img/arrow.png) 130px 12px no-repeat; letter-spacing:2px; color:black;}
+.rd-body{position:absolute; width:100%; left:0; top:165px; bottom:0; background:url(../img/bg.jpg) repeat; }
+.rd-wrap{width:610px; height:340px;}
+.rd-wrap p{position:absolute; width:100%; text-align:center; letter-spacing:2px;}
+.rd-line{width:300px; height:3px; margin:0 auto; margin-top:180px; background:#efeeee;}
+.rd-t1{top:100px; line-height:30px; font-size:14px; color:#808080;}
+.rd-t2{top:125px; line-height:50px; font-size:30px;}
+.rd-t3{top:280px; line-height:20px; font-size:12px; color:#808080;}
+.rd-copy{position:absolute; width:100%; text-align:center; letter-spacing:2px; line-height:50px; bottom:0; color:#808080;}
+
+.app{background:url(../img/bg.jpg) repeat}
+.app-wrap{width:96%; height:90%;}
+.app-wrap a{position:absolute; top:35px; left:25px; width:85px; height:45px; line-height:45px; font-size:24px; border-bottom:1px solid black; background:url(../img/back.png) 0px 12px no-repeat; letter-spacing:2px; color:black; text-align:right;}
+.app-logo{margin:0 auto; margin-top:35px; width:209px; height:71px; background:url(../img/logo.png); position:relative;}
+.app-wrap p{position:absolute; width:100%; text-align:center; letter-spacing:2px;}
+.app-t1{line-height:40px; top:120px; font-size:18px; color:#808080;}
+.app-line{width:550px; height:2px; margin:0 auto; margin-top:55px; background:#efeeee; position:relative;}
+.app-inner{width:500px; height:460px;}
+.app-inner div{position:absolute;}
+.app-iphone{width:155px; height:327px; left:0; bottom:0; background:url(../img/iphone.png);}
+.app-qr{width:281px; height:292px; right:0; bottom:10px; background:url(../img/qr.png);}
+.app-copy{line-height:50px; bottom:0; color:#808080;}
+
+.pl{background:url(../img/bg.jpg) repeat}
+.pl-wrap{width:90%; margin:0 auto; margin-top:34px; position:relative;}
+.pl-margin{width:100%; height:75px;}
+.pl-logo{margin:0 auto; width:209px; height:71px; background:url(../img/logo.png); position:relative;}
+.pl-title{width:100%; height:50px; line-height:50px; text-align:center; font-size:26px; margin-top:75px; color:#808080; position:relative;}
+.pl-line{width:550px; height:2px; margin:0 auto; background:#efeeee; position:relative;}
+.pl-article{width:730px; margin:0 auto; margin-top:70px; position:relative;}
+.pl-article p{line-height:35px; color:#808080; font-size:15px; letter-spacing:1px;}
+.bold{font-weight:bold;}
+.pl-end{width:100%; height:35px;}
+.pl-copy{width:100%; text-align:center; letter-spacing:2px; line-height:80px; margin-bottom:20px; color:#808080;}

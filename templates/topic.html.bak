@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>Camelia山茶花 {{topic.title}}</title>
+	<meta name="viewport" content="initial-scale=0.5, user-scalable=no" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script type="text/javascript" src="{{STATIC_URL}}js/mustache.js"></script>
+        <script type="text/javascript" src="{{STATIC_URL}}js/mode1.js"></script>
+        <script type="text/javascript" src="{{STATIC_URL}}js/picTuning1.js"></script>
+	
+        <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/mode1.css"/>
+	<style type="text/css"></style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="top_box">
+			<div class="top">
+				<div class="logo"></div>
+				<div class="slogan">可见即可买 精致女性的场景购物平台</div>
+				<div class="slogan_line line1"></div>
+				<div class="slogan_line line2"></div>				
+			</div>
+		</div>	
+
+		<div class="bpic_box" id="bpic_box">
+			<img src="{{MEDIA_URL}}{{topic.image_entity}}"/>
+			<div class="bpic_cover"></div>
+			<div class="bpic_title">{{topic.title}}</div>	
+                        <input id="topic_id" name="topic_id" type="hidden" value="{{topic.id}}" />		
+                        <input id="items_start" name="items_start" type="hidden" value="{{topic.items_start}}" />		
+                        
+                        <input id="items_length" name="items_length" type="hidden" value="{{topic.items_length}}" />		
+		</div>
+
+		<div class="margin"></div>
+
+		<div class="content clearfix" id="content">
+                        {% for item in items %} 
+			<div class="entry">
+                                <a class="spic_wrap" href="/item/{{item.id}}" target="_blank">
+					<div class="spic_box">
+						<img src="{{MEDIA_URL}}{{item.image_entity}}"/>
+					</div>
+				</a>
+				<div class="info ellipsis">
+					<div class="brand">{{item.brand}}</div>
+					<div class="name">{{item.title}}</div>
+				</div>
+				<div class="sep"></div>
+				<div class="price">
+                                        {% if item.is_discount%}
+					<span class="new">{{item.get_sell_price}} {{item.currency}}</span>
+					<span class="old">{{item.get_original_price}} {{item.currency}}<span>
+                                        {% else %}
+                                        <span class="new">{{item.get_sell_price}} {{item.currency}}</span>
+                                        {% endif %}
+				</div>
+				<div class="url"><a href="http://{{item.get_site}}" target="_blank">{{item.get_site}}</a></div>
+                                <a class="buy" href="/item/{{item.id}}" target="_blank">点击购买</a>	
+                                {% if item.is_discount %}
+				<div class="sale"></div>	
+                                {% endif %}
+			</div>
+                        {% endfor %}
+		</div>	
+
+
+                <!--<div class="spin_box">
+			<div class="spin"></div>
+		</div>-->
+
+			
+	</div>
+        <div class="spin_box"><div class="spin"></div></div>
+        <div class="no_more hide">没有更多了..</div>
+<script type="text/javascript">
+
+function doPic(){
+    new PicTuning(".spic_box img").init();
+}   
+    
+$(function(){
+    setInterval("doPic()",2000);
+    new Render_data().init();
+    new Pic_sizer("#bpic_box",16,9).init();
+});
+
+
+</script>
+
+
+</body>
+</html>

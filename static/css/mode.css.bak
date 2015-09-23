@@ -1,0 +1,73 @@
+@charset "utf-8";
+body,ul,ol,li,p,span,h1,h2,h3,h4,h5,h6,form,fieldset,table,img,div,input,dl,em{margin:0; padding:0;}
+body{font-size:12px;font-family:"iconfont","微软雅黑", Arial, Tahoma, "宋体"; color:#333; background:white;}
+ul,ol,li{list-style-type:none; vertical-align:middle;}
+input{vertical-align:middle; font-family:"微软雅黑",Arial,Tahoma,"宋体"; color:#333;}
+input::-ms-clear{display:none;}
+img{ border:none; vertical-align:middle;}
+a{color:#4e7b23; text-decoration:none; cursor:pointer;}
+.ellipsis{white-space:nowrap !important; white-space:normal; overflow:hidden; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
+.clear{clear:both;overflow:hidden;margin:0!important;padding:0!important;height:0!important;line-height:0!important;font-size:0!important;border:0!important;float:none!important}
+.clearfix:after{content:"."; display:block; height:0; visibility:hidden; clear:both;}
+.l{float:left;}
+.r{float:right;}
+.hide{display:none;}
+
+.wrap{width:100%;}
+.top_box{width:100%; height:230px; background:#343434;}
+.top{width:640px; height:100%; margin:0 auto; color:white; position:relative; overflow:hidden;}
+.logo{width:280px; height:100px; margin:0 auto; margin-top:65px;  background:url(../img/logo.png) no-repeat; }
+.slogan{width:415px; margin:25px 0 0 125px; color:#e0e0e0; letter-spacing:6px; font-size:18px; }
+.slogan_line{position:absolute; top:200px; width:55px; height:1px; background:#e0e0e0;}
+.line1{left:50px;}
+.line2{right:50px;}
+
+.bpic_box{width:100%; overflow:hidden; position:relative;}
+.bpic_cover{width:100%; height:65px; background:black; opacity:0.7; position:absolute; left:0; bottom:0;}
+.bpic_title{width:100%; height:65px; line-height:65px; position:absolute; left:10px; bottom:0; color:white; font-size:34px; letter-spacing:2px;}
+
+
+.margin{width:98%; height:1px; margin:0 auto; margin-top:30px; margin-bottom:40px; background:#f6f6f6; border-top:1px solid #fbfbfb; }
+
+.content{width:100%; min-width:640px; background:white;}
+.entry{float:left; width:47%; margin-left:2%; margin-bottom:15px; border:1px solid #dbdbdb; position:relative;}
+.spic_wrap{display:block; width:100%; margin:0 auto; }
+.spic_box{width:95%; margin:0 auto; margin-top:10px; margin-bottom:10px; overflow:hidden;}
+.spic_box img{display:block; margin:0 auto; cursor:pointer; width:100%; height:400px;}
+.info{padding-left:10px; height:60px; line-height:30px; font-size:20px; }
+.price,.url{padding-left:10px; height:30px; line-height:30px; font-size:20px;}
+.new,.brand{color:black;}
+.name,.old{color:#787878;}
+.price{font-style:italic;}
+.old{text-decoration:line-through; margin-left:10px; }
+.url{display:block; color:#4e7b42;}
+.buy{display:block; height:40px; line-height:40px; padding:0 10px; position:absolute; right:8px; bottom:8px; background:#343434; color:white; border-radius:3px; cursor:pointer; font-size:18px; }
+.sep{width:96%; height:1px; margin:0 auto; margin-top:5px; margin-bottom:5px; background:#dbdbdb; }
+.sale{width:75px; height:79px; position:absolute; top:0; right:0; background:url(../img/dogear.png); z-index:10;}
+
+.spin_box{width:100%; height:50px; margin-top:80px;}
+.spin{width:50px; height:12px; background:black; margin:0 auto;}
+.no_more{width:100%; height:50px; line-height:50px; margin-top:30px; text-align:center; color:#808080; font-size:20px; }
+
+.spin{
+	animation:spin 1s linear infinite;
+	-moz-animation:spin 1s linear infinite;
+	-webkit-animation:spin 1s linear infinite;
+	-o-animation:spin 1s linear infinite;
+}
+@keyframes spin{
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+	from {-moz-transform: rotate(0deg);}
+	to {-moz-transform: rotate(360deg);}
+}
+@-webkit-keyframes spin{
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(360deg);}
+}
+@-o-keyframes spin{
+	from {-o--o-transform: rotate(0deg);}
+	to {-o-transform: rotate(360deg);}
+}
