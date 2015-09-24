@@ -1,24 +1,78 @@
-<!DOCTYPE HTML>
-<html class="full">
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="/static/css/base.css">
-<title></title>
-</head>
-<body class="ready full">
-	<div class="rd-head">
-		<div></div>
-		<a href="app.html">App 下载</a>
-	</div>
-	<div class="rd-body">
-		<div class="rd-wrap center">
-			<div class="mist"></div>
-			<p class="rd-t1">工程师正在努力开发</p>
-			<p class="rd-t2">“即将上线 敬请期待”</p>
-			<div class="rd-line"></div>
-			<p class="rd-t3">Camelia山茶花 从约会到职场 精致女性的轻奢消费美学</p>
-		</div>
-		<p class="rd-copy">Copyright © 2012-2015 北京山茶花科技有限公司 | 京ICP备13022251号-2</p>
-	</div>
-</body>
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="Keywords" content="山茶花,Camelia山茶花,Camelia,什么值得买,导购,时尚,时尚杂志,购物,服饰,折扣,电商,美妆,搭配,同款,明星,街拍,健身,时尚芭莎,海淘,海外购,洋码头,聚美,代购,奢侈品,小红书">
+    <meta name="author" content="">
+    <link rel="icon" href="{% static "img/icon.jpg" %}">
+
+    <title>Camelia山茶花</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "css/sticky-footer.css" %}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header" style="border:0px; padding: 0px 30px;">
+        <img src="{% static "img/logo.png" %}" alt="">
+      </div>
+      <div class="row" style="padding-top: 30px;">
+        <div class="col-md-8">
+          <div><img src="{% static "img/description.png" %}" class="img-responsive center-block" alt=""></div>
+          <div style="padding-top: 15px;"><img src="{% static "img/app_show.png" %}" class="img-responsive center-block" alt=""></div>
+        </div>
+        <div class="col-md-4" style="padding-top: 140px;">
+          <div><a href="https://itunes.apple.com/us/app/shan-cha-hua-ji-yu-hai-tao/id1029369495?l=zh&ls=1&mt=8"><img src="{% static "img/download.png" %}" class="img-responsive center-block" alt=""></a></div> 
+          <div style="padding-top: 50px;"><img src="{% static "img/code.png" %}" class="img-responsive center-block" alt=""></div>
+        </div>  
+      </div>
+
+       <div class="col-md-12" style="padding-top: 70px;"><img src="{% static "img/line.png" %}" class="img-responsive center-block" alt=""></div>
+
+       <div class="col-md-offset-2 col-xs-offset-2 col-md-8 col-xs-8" style="padding: 70px 0px;">
+         <div class="col-md-3 col-xs-3">
+            <a href="javascript:void(0);" tabindex="0" data-toggle="popover" data-trigger="focus" title="" data-placement="top" data-content=""><img src="{% static "img/webchat_icon.png" %}" alt="" class="img-responsive center-block"></a>
+         </div>
+         <div class="col-md-3 col-xs-3">
+            <a href="http://weibo.com/hicamelia"><img src="{% static "img/weibo_icon.png" %}" alt="" class="img-responsive center-block"></a>
+         </div>
+         <div class="col-md-3 col-xs-3">
+            <a href="mailto:wechat@hicamelia.com"><img src="{% static "img/mail_icon.png" %}" alt="" class="img-responsive center-block"></a>
+         </div>
+         <div class="col-md-3 col-xs-3">
+           <a href="https://instagram.com/camelia_official"><img src="{% static "img/ins_icon.png" %}" alt="" class="img-responsive center-block"></a>
+         </div>
+       </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted text-center">Copyright © 2014-2015北京山茶花科技有限公司京ICP备13022251号-2</p>
+      </div>
+    </footer>
+
+    <script src="{% static "js/jquery-1.11.3.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{% static "js/ie10-viewport-bug-workaround.js" %}"></script>
+    <script>
+      $(function () {
+        var image = '<img src="{% static "img/weixin_code.jpg" %}"" alt="" style="width:200px; height:200px;">';
+        $('[data-toggle="popover"]').popover({content: image, html: true});
+      });
+    </script>
+  </body>
 </html>

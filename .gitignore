@@ -1,3 +1,4 @@
 /media
 /logs
 *.pyc
+/sites/settings.py
